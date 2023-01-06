@@ -1,0 +1,29 @@
+
+.data_proj div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.data_proj {
+  padding: 25px;
+  width: 370px;
+}
+
+.all_space {
+  justify-content: space-between;
+  display: flex;
+}
+
+.name_repo a {
+  text-decoration: none;
+  color: #837E9F;
+  font-size: 20px;
+}
+
+.box {
+  background: #302F3D;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-bottom: 40px;
+}

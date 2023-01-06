@@ -1,6 +1,6 @@
 import { Component, useState } from 'react'
 import { useEffect } from 'react'
-import './index.css'
+import styles from './index.module.css'
 
 function Card() {
     const [repository, setRepository] = useState([])
@@ -29,9 +29,10 @@ function Card() {
     return (
         repository.map(repository => {
             return (
-
-                <div className="box" id="data_proj" >
-                    <div id="name_repo">
+                
+                <div className={styles.box}  >
+                    <div className={styles.data_proj}>
+                    <div className={styles.name_repo}>
                         <img id="cotainer_img_1" src="/src/assets/Vector.png" alt=""></img>
                         <a id="url_proj" href={repository.html_url} target="_blank">
                             <p>{repository.name}</p>
@@ -40,7 +41,7 @@ function Card() {
                     <div id="desc_proj">
                         <p>{repository.description}</p>
                     </div>
-                    <div id="all_space">
+                    <div className={styles.all_space}>
                         <div>
                             <img src="/src/assets/Vector (1).png" alt=""></img>
                             <p id="stars">{repository.stargazers_count} </p>
@@ -53,7 +54,9 @@ function Card() {
                             <p id="visibility">{repository.language}</p>
                         </div>
                     </div>
+                    </div>
                 </div >
+                
 
 
             )
@@ -63,4 +66,3 @@ function Card() {
 
 
 export default Card
-

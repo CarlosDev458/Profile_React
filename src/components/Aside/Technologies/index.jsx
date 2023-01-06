@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './index.css'
+import styles from  './index.module.css'
 
 function Tech() {
     const [tech, setTech] = useState([])
@@ -13,7 +13,7 @@ function Tech() {
                 'JavaScript',
                 'Abap' ,
                 'React',
-                'Node.js'
+                'Node.js',
             ])
     }, [])
     
@@ -21,7 +21,7 @@ function Tech() {
     return (
         tech.map(tech => {
             return (
-                <span>{tech}</span>
+                <span className={styles.langs_tech}>{tech}</span>
             )
         }))
 

@@ -1,6 +1,6 @@
 import { Component, useState, useEffect } from 'react'
-import './index.css'
 import Tech from './Technologies/index'
+import styles from './index.module.css'
 
 
 function Aside() {
@@ -43,16 +43,16 @@ function Aside() {
 
   return (
 
-    <section id="screen_part_1">
-      <div className="box" id="block_1">
-        <img id="block_1_img_1" src={user.avatar} alt=""></img>
+    <section className={styles.cards_content} >
+      <div className={styles.block_1}>
+        <img className={styles.block_1_img_1} src={user.avatar} alt=""></img>
         <h1>{user.nome}</h1>
         <p>{user.bio}</p>
       </div>
 
 
-      <div className="box" id="block_2">
-        <div id="block_2_itens">
+      <div className={styles.box}>
+        <div className={styles.block_2_itens}>
           <a target="_blank" href={user.site} >
             <img src="/src/assets/briefcase.png" alt=""></img>
             <p id="info_1">{user.empresa}</p>
@@ -72,37 +72,36 @@ function Aside() {
         </div>
       </div>
 
-      <div className="box" id="block_3">
-        <div id="block_3_itens">
-          <h1 class="titles">Tecnologias</h1>
-          <div id="block_3_list-1">
+      <div className={styles.box} id="block_3">
+        <div className={styles.block_3_itens}>
+          <h1 className={styles.titles}>Tecnologias</h1>
+          <div className={styles.block_3_list_1}>
+
             <Tech />
-
-
 
           </div>
         </div>
       </div>
-      <div class="box" id="block_4">
-        <div id="block_4_itens">
-          <h1 class="titles">Experiência</h1>
+      <div className={styles.box} id="block_4">
+        <div className={styles.block_4_itens}>
+          <h1 className={styles.titles}>Experiência</h1>
           <div id="block_4_list-1">
             <ul>
               <li id="block_4_item_1"> Lab2Dev </li>
-              <li class="item_list" id="block_4_item_4"> 2022 - 3 Meses </li>
-              <li class="item_list" id="block_4_item_3"> Prodev - ABAP</li>
+              <li className={styles.item_list} id="block_4_item_4"> 2022 - 3 Meses </li>
+              <li className={styles.item_list} id="block_4_item_3"> Prodev - ABAP</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="box" id="block_5">
-        <div id="block_5_itens">
-          <h1 class="titles">Educação</h1>
+      <div className={styles.box} id="block_5">
+        <div className={styles.block_5_itens}>
+          <h1 className={styles.titles}>Educação</h1>
           <div id="list-1">
             <ul>
               <li id="block_5_item_1"> ITB- Brasílio Flores </li>
-              <li class="item_list"> 2022 - 3 Anos </li>
-              <li class="item_list"> Informática</li>
+              <li className={styles.item_list}> 2022 - 3 Anos </li>
+              <li className={styles.item_list}> Informática</li>
             </ul>
           </div>
 

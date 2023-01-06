@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+}
+
+.screen_part_2 {
+  width: 900px;
+  margin-left: 40px;
+}
+
+.screen_part_2_1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+} 
+
+
+.container_1 {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  background: #302F3D;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-bottom: 40px;
+
+}

@@ -1,11 +1,8 @@
 
-main {
-  display: flex;
-}
 
 /* Style Section 1 */
 
-#screen_part_1 {
+.cards_content  {
   width: 348px;
   display: flex;
   flex-direction: column;
@@ -22,12 +19,17 @@ main {
 
 /* Style Block 1 */
 
-#block_1 {
+.block_1 {
+  background: #302F3D;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-bottom: 40px;
   text-align: center;
-  padding: 30px;
+  padding: 40px;
+
 }
 
-#block_1_img_1 {
+.block_1_img_1 {
   width: 128px;
   height: 128px;
   border-radius: 50%;
@@ -39,17 +41,17 @@ main {
 
 /* Style Block 2 */
 
-#block_2_itens {
+.block_2_itens {
   padding: 20px;
 }
 
-#block_2 img {
+.block_2_itens img {
   width: 24px;
   height: 24px;
 }
 
 
-#block_2 a {
+.block_2_itens a {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -60,17 +62,15 @@ main {
 
 /* Style Block 3 */
 
-#block_3_itens {
+.block_3_itens {
   padding: 20px;
 }
 
-#block_3_list-1 {
+.block_3_list_1 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
-
 
 /* Style dos Tilulos dos Blocks 1,2 e 3 */
 
@@ -81,7 +81,7 @@ main {
 
 /* Style Block 4 */
 
-#block_4_itens {
+.block_4_itens {
   padding: 20px;
 }
 
@@ -91,21 +91,8 @@ main {
 
 /* Style Block 5 */
 
-#block_5_itens {
+.block_5_itens {
   padding: 20px;
 
 }
 
-/* Style Section 2 */
-
-#screen_part_2 {
-  width: 900px;
-  margin-left: 40px;
-}
-
-#screen_part_2_1 {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-}

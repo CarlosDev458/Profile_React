@@ -1,19 +1,19 @@
-import './index.css'
+import styles from './index.module.css'
 import Aside from '../../components/Aside'
 import Card from '../../components/Card'
 
 function Home() {
 
     return (
-      <main>
+      <main className={styles.content}>
       <Aside />
-        <section id="screen_part_2">
-        <div id="container_1" class="box">
+        <section className={styles.screen_part_2}>
+        <div className={styles.container_1} class="box">
           <h1>Meus Projetos</h1>
           <p>Veja Todos</p>
         </div>
 
-        <section id="screen_part_2_1">
+        <section className={styles.screen_part_2_1}>
           <Card />
           
         </section>
